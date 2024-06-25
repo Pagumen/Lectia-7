@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <section>
+        <form action="#">
+          <div class="container">
+            <div class="formcontainer">
+              <label for="name">First Name</label>
+              <input type="text" id="name" placeholder="Your name" />
+            </div>
+            <div class="formcontainer">
+              <label for="lastname">Last Name</label>
+              <input type="text" id="lastname" placeholder="Your last name" />
+            </div>
+            <div class="formcontainer">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Your email" />
+            </div>
+            <div class="formcontainer">
+              <label for="phonenumber">Phone number</label>
+              <input
+                type="tel"
+                id="phonenumber"
+                placeholder="Your phone number"
+              />
+            </div>
+          </div>
+          <div class="formcontainer">
+            <label for="country">Country</label>
+            <select name="country" id="country">
+              <option value="">- Select your country -</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Armenia">Armenia</option>
+              <option value="Australia">Australia</option>
+              <option value="Brazilia">Brazilia</option>
+            </select>
+          </div>
+          <div class="formcontainer">
+            <label for="address">Address</label>
+            <input type="text" id="address" placeholder="Your address" />
+          </div>
+          <div class="formcontainer">
+            <label for="subject">Subject</label>
+            <textarea
+              name="subject"
+              id="subject"
+              placeholder="Write something..."
+            ></textarea>
+          </div>
+          <div class="formcontainer">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #c5a8e0;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+main {
+  width: 80vw;
+  margin: auto;
+  background-color: white;
+  height: 100vh;
+  padding: 10px 50px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+form select {
+  height: 30px;
+  outline: 0;
+  border: 0;
+}
+
+form input {
+  height: 30px;
+  outline: 0;
+  border: 0;
+  color: white;
+}
+
+form input::placeholder {
+  color: white;
+  padding-left: 5px;
+}
+
+#country {
+  background-color: #a25ce0;
+  color: white;
+  cursor: pointer;
+}
+
+#address {
+  background-color: #a25ce0;
+}
+
+form textarea {
+  height: 125px;
+  outline: 0;
+  border: 0;
+  background-color: #8531d1;
+}
+
+form textarea::placeholder {
+  color: white;
+}
+
+form button {
+  box-sizing: border-box;
+  height: 36px;
+  outline: 0;
+  border: 0;
+  background-color: #410179;
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  row-gap: 15px;
+  margin-bottom: 15px;
+}
+
+.container input {
+  background-color: #c59fe8;
+}
+
+.formcontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+form > .formcontainer {
+  margin-bottom: 15px;
+}
+
+button {
+  cursor: pointer;
+}

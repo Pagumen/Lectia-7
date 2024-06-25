@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 10em;
+  animation: rainbow 1.5s infinite, resize 1.5s infinite;
+}
+
+img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* clasa overlay pentru ca utilizatorul sa nu poata insera nimic de pe pagina*/
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  z-index: 1000;
+  pointer-events: all;
+}
+
+@keyframes rainbow {
+  0% {
+    color: #ff0000;
+  }
+  16.67% {
+    color: #ff7f00;
+  }
+  33.33% {
+    color: #ffff00;
+  }
+  50% {
+    color: #00ff00;
+  }
+  66.67% {
+    color: #0000ff;
+  }
+  83.33% {
+    color: #4b0082;
+  }
+  100% {
+    color: #9400d3;
+  }
+}
+
+@keyframes resize {
+  0%,
+  100% {
+    font-size: 10em;
+  }
+  50% {
+    font-size: 12em;
+  }
+}
